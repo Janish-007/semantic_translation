@@ -115,7 +115,7 @@ Respond only with the number.
 
 
 # Streamlit UI
-st.title("Semantic Translator)")
+st.title("Semantic Translator")
 st.markdown("Translate text semantically — choose a model or enter a custom model name if yours isn't listed.")
 
 # Language inputs (generic/free-text)
@@ -158,4 +158,5 @@ if st.button("Translate"):
                 st.info("Could not parse a numeric similarity score from the model response.")
         except Exception as e:
             st.error(f"Error calling model `{selected_model}`: {e}")
+
 
